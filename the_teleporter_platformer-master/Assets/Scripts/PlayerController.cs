@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        PlayerPrefs.SetInt("CheckPoint", 0);
+     //   PlayerPrefs.SetInt("CheckPoint", 0);
     }
 
     void Start()
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
         isBoost = false;
         
-        transform.position = GetComponent<StartPosition>().GetPosition();
+       // transform.position = GetComponent<StartPosition>().GetPosition();
         _currentSpeed = _startSpeed;
         
         _rigidbody = GetComponent<Rigidbody2D>();

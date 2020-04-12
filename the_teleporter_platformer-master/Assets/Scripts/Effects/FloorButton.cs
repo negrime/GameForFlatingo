@@ -53,6 +53,10 @@ public class FloorButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
         _audiosource.PlayOneShot(_audioclip);
         Vector3 newPosition = transform.position;
         newPosition.y += _buttonPressDepth;
